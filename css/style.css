@@ -203,3 +203,223 @@ RESPONSIVE
 ```
 
 }
+/* =========================
+HERO SECTION
+========================= */
+
+.hero {
+min-height: 100vh;
+
+```
+display: flex;
+align-items: center;
+justify-content: center;
+
+padding: 120px 5% 80px;
+
+background:
+    linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop');
+
+background-size: cover;
+background-position: center;
+
+color: white;
+
+text-align: center;
+```
+
+}
+
+.hero-content {
+max-width: 900px;
+
+```
+animation: fadeUp 1s ease;
+```
+
+}
+
+/* Sous titre */
+
+.hero-subtitle {
+font-size: 1rem;
+
+```
+letter-spacing: 2px;
+
+text-transform: uppercase;
+
+margin-bottom: 1rem;
+
+color: #cccccc;
+```
+
+}
+
+/* Titre */
+
+.hero h1 {
+font-size: 4rem;
+
+```
+line-height: 1.1;
+
+margin-bottom: 1.5rem;
+```
+
+}
+
+/* Description */
+
+.hero-description {
+font-size: 1.1rem;
+
+```
+line-height: 1.8;
+
+margin-bottom: 2rem;
+
+color: #dddddd;
+```
+
+}
+
+/* Boutons */
+
+.hero-buttons {
+display: flex;
+justify-content: center;
+gap: 1rem;
+
+```
+margin-bottom: 3rem;
+
+flex-wrap: wrap;
+```
+
+}
+
+/* Bouton général */
+
+.btn {
+padding: 14px 28px;
+
+```
+border-radius: var(--border-radius);
+
+font-weight: 600;
+
+transition: var(--transition);
+```
+
+}
+
+/* Bouton primaire */
+
+.btn-primary {
+background-color: var(--primary-color);
+color: white;
+}
+
+.btn-primary:hover {
+transform: translateY(-3px);
+}
+
+/* Bouton secondaire */
+
+.btn-secondary {
+border: 2px solid white;
+color: white;
+}
+
+.btn-secondary:hover {
+background-color: white;
+color: black;
+}
+
+/* Countdown */
+
+.countdown {
+display: flex;
+justify-content: center;
+gap: 1rem;
+
+```
+flex-wrap: wrap;
+```
+
+}
+
+.time-box {
+width: 110px;
+height: 110px;
+
+```
+background-color: rgba(255, 255, 255, 0.1);
+
+border: 1px solid rgba(255, 255, 255, 0.2);
+
+backdrop-filter: blur(10px);
+
+border-radius: var(--border-radius);
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+```
+
+}
+
+.time-box span {
+font-size: 2rem;
+font-weight: 700;
+}
+
+.time-box small {
+margin-top: 0.5rem;
+color: #cccccc;
+}
+
+/* Animation */
+
+@keyframes fadeUp {
+
+```
+from {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+```
+
+}
+
+/* =========================
+RESPONSIVE HERO
+========================= */
+
+@media (max-width: 768px) {
+
+```
+.hero h1 {
+    font-size: 2.7rem;
+}
+
+.hero-description {
+    font-size: 1rem;
+}
+
+.time-box {
+    width: 90px;
+    height: 90px;
+}
+```
+
+}
