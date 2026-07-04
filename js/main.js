@@ -46,3 +46,64 @@ updateCountdown();
 
 // Mise à jour chaque seconde
 setInterval(updateCountdown, 1000);
+
+
+// =========================
+// ANIMATION DES COMPTEURS
+// =========================
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+
+const updateCounter = () => {
+
+    const target = +counter.getAttribute("data-target");
+
+    const current = +counter.textContent;
+
+    const increment = target / 100;
+
+    if (current < target) {
+
+        counter.textContent = Math.ceil(current + increment);
+
+        setTimeout(updateCounter, 30);
+
+    } else {
+
+        counter.textContent = target;
+
+    }
+
+};
+
+updateCounter();
+
+
+});
+
+// =========================
+// INTERSECTION OBSERVER
+// =========================
+
+const hiddenElements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries) => {
+
+
+entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+
+        entry.target.classList.add("show");
+
+    }
+
+});
+
+
+});
+
+hiddenElements.forEach(el => observer.observe(el));
