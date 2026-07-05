@@ -649,3 +649,114 @@ line-height: 1.7;
 
 
 }
+/* =========================
+SPEAKERS SECTION
+========================= */
+
+.speakers-section {
+padding: 100px 5%;
+
+
+background-color: var(--white-color);
+
+
+}
+
+/* Grid */
+
+.speakers-grid {
+display: grid;
+
+
+grid-template-columns: repeat(4, 1fr);
+
+gap: 2rem;
+
+
+}
+
+/* Carte */
+
+.speaker-card {
+background-color: var(--light-color);
+
+
+border-radius: var(--border-radius);
+
+overflow: hidden;
+
+box-shadow: var(--shadow);
+
+transition: var(--transition);
+
+
+}
+
+/* Hover */
+
+.speaker-card:hover {
+transform: translateY(-10px);
+}
+
+/* Image */
+
+.speaker-card img {
+height: 320px;
+
+
+object-fit: cover;
+
+
+}
+
+/* Contenu */
+
+.speaker-content {
+padding: 1.5rem;
+
+
+text-align: center;
+
+
+}
+
+.speaker-content h3 {
+margin-bottom: 0.5rem;
+}
+
+.speaker-content p {
+color: var(--gray-color);
+}
+
+/* Bouton */
+
+.speaker-button {
+text-align: center;
+
+
+margin-top: 3rem;
+
+
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+
+.speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+@media (max-width: 576px) {
+
+
+.speakers-grid {
+    grid-template-columns: 1fr;
+}
+
+
+}
