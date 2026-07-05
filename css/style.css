@@ -558,3 +558,94 @@ transform: translateY(0);
 
 
 }
+/* =========================
+WHY SECTION
+========================= */
+
+.why-section {
+padding: 100px 5%;
+
+
+background-color: var(--light-color);
+
+
+}
+
+/* Conteneur flex */
+
+.why-container {
+display: flex;
+
+
+justify-content: center;
+
+gap: 2rem;
+
+flex-wrap: wrap;
+
+
+}
+
+/* Carte */
+
+.why-card {
+flex: 1 1 300px;
+
+
+background-color: var(--white-color);
+
+padding: 3rem 2rem;
+
+border-radius: var(--border-radius);
+
+text-align: center;
+
+box-shadow: var(--shadow);
+
+transition: var(--transition);
+
+
+}
+
+/* Hover */
+
+.why-card:hover {
+transform: translateY(-10px);
+}
+
+/* Icônes */
+
+.why-card i {
+font-size: 3rem;
+
+
+color: var(--primary-color);
+
+margin-bottom: 1.5rem;
+
+display: inline-block;
+
+
+}
+
+/* Titre */
+
+.why-card h3 {
+margin-bottom: 1rem;
+
+
+font-size: 1.5rem;
+
+
+}
+
+/* Texte */
+
+.why-card p {
+color: var(--gray-color);
+
+
+line-height: 1.7;
+
+
+}
