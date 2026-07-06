@@ -107,3 +107,71 @@ entries.forEach(entry => {
 });
 
 hiddenElements.forEach(el => observer.observe(el));
+// =========================
+// ANNÉE DYNAMIQUE
+// =========================
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+// =========================
+// NAVBAR SCROLL
+// =========================
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+
+if (window.scrollY > 80) {
+
+    navbar.style.background = "rgba(18,18,18,0.95)";
+
+    navbar.style.boxShadow =
+    "0 5px 15px rgba(0,0,0,0.2)";
+
+} else {
+
+    navbar.style.background =
+    "rgba(255,255,255,0.9)";
+
+    navbar.style.boxShadow = "none";
+}
+
+
+});
+
+// =========================
+// BOUTON RETOUR HAUT
+// =========================
+
+const scrollTopBtn =
+document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+
+
+if (window.scrollY > 300) {
+
+    scrollTopBtn.style.display = "block";
+
+} else {
+
+    scrollTopBtn.style.display = "none";
+
+}
+
+
+});
+
+// Scroll smooth
+scrollTopBtn.addEventListener("click", () => {
+
+
+window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
+
+
+});

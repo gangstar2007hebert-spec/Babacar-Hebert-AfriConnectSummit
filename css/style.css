@@ -760,3 +760,231 @@ margin-top: 3rem;
 
 
 }
+/* =========================
+SPONSORS
+========================= */
+
+.sponsors-section {
+padding: 100px 5%;
+
+
+background-color: var(--light-color);
+
+
+}
+
+.sponsors-container {
+display: flex;
+
+
+justify-content: center;
+
+align-items: center;
+
+gap: 2rem;
+
+flex-wrap: wrap;
+
+
+}
+
+/* Sponsor */
+
+.sponsor {
+padding: 3rem 2rem;
+
+
+border-radius: var(--border-radius);
+
+text-align: center;
+
+color: white;
+
+transition: var(--transition);
+
+
+}
+
+.sponsor:hover {
+transform: translateY(-10px);
+}
+
+/* Gold */
+
+.gold {
+background: #d4af37;
+
+
+width: 320px;
+
+
+}
+
+/* Silver */
+
+.silver {
+background: #9ea7ad;
+
+
+width: 260px;
+
+
+}
+
+/* Bronze */
+
+.bronze {
+background: #b87333;
+
+
+width: 220px;
+
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer {
+background-color: var(--secondary-color);
+
+
+color: white;
+
+padding-top: 80px;
+
+
+}
+
+/* Container */
+
+.footer-container {
+display: flex;
+
+
+justify-content: space-between;
+
+gap: 3rem;
+
+flex-wrap: wrap;
+
+padding: 0 5% 3rem;
+
+
+}
+
+/* Colonnes */
+
+.footer-column {
+flex: 1 1 250px;
+}
+
+.footer-column h3 {
+margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column li {
+color: #cccccc;
+
+
+line-height: 1.8;
+
+
+}
+
+.footer-column ul {
+display: flex;
+flex-direction: column;
+gap: 0.7rem;
+}
+
+/* Réseaux */
+
+.social-icons {
+display: flex;
+
+
+gap: 1rem;
+
+
+}
+
+.social-icons a {
+width: 45px;
+height: 45px;
+
+
+background-color: rgba(255,255,255,0.1);
+
+border-radius: 50%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+transition: var(--transition);
+
+
+}
+
+.social-icons a:hover {
+background-color: var(--primary-color);
+}
+
+/* Footer bottom */
+
+.footer-bottom {
+border-top: 1px solid rgba(255,255,255,0.1);
+
+
+text-align: center;
+
+padding: 1.5rem;
+
+
+}
+
+/* =========================
+SCROLL TOP
+========================= */
+
+#scrollTopBtn {
+position: fixed;
+
+
+bottom: 30px;
+right: 30px;
+
+width: 50px;
+height: 50px;
+
+border-radius: 50%;
+
+background-color: var(--primary-color);
+
+color: white;
+
+font-size: 1.2rem;
+
+display: none;
+
+z-index: 1000;
+
+
+}
+
+/* =========================
+RESPONSIVE FOOTER
+========================= */
+
+@media (max-width: 768px) {
+
+
+.footer-container {
+    flex-direction: column;
+}
+
+
+}
