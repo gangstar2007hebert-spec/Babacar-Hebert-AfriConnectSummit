@@ -30,14 +30,14 @@ const seconds = Math.floor(
     / 1000
 );
 
-document.getElementById("days").textContent = days;
+if (document.getElementById("days")) {
 
-document.getElementById("hours").textContent = hours;
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
 
-document.getElementById("minutes").textContent = minutes;
-
-document.getElementById("seconds").textContent = seconds;
-
+}
 
 }
 

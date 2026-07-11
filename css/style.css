@@ -1074,3 +1074,43 @@ th{
     background:var(--primary-color);
     color:white;
 }
+/* =========================
+   THEMES
+========================= */
+
+.themes-section{
+    padding:100px 5%;
+}
+
+.themes-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:2rem;
+}
+
+.theme-card{
+    background:var(--white-color);
+    padding:2rem;
+    border-radius:var(--border-radius);
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.theme-card:hover{
+    transform:translateY(-10px);
+}
+
+.theme-card i{
+    font-size:3rem;
+    color:var(--primary-color);
+    margin-bottom:1rem;
+}
+
+@media(max-width:768px){
+
+    .themes-grid{
+        grid-template-columns:1fr;
+    }
+
+}
