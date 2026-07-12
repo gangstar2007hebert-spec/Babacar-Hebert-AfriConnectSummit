@@ -1114,3 +1114,22 @@ th{
     }
 
 }
+.filter-buttons{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin:3rem 0;
+}
+
+.filter-btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.filter-btn.active{
+    background:var(--primary-color);
+    color:white;
+}

@@ -199,3 +199,43 @@ tabButtons.forEach(button => {
     });
 
 });
+const filterButtons =
+document.querySelectorAll(".filter-btn");
+
+const filterItems =
+document.querySelectorAll(".filter-item");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn =>
+            btn.classList.remove("active")
+        );
+
+        button.classList.add("active");
+
+        const filter =
+        button.getAttribute("data-filter");
+
+        filterItems.forEach(item => {
+
+            if (
+                filter === "all" ||
+                item.dataset.category === filter
+            ) {
+
+                item.style.display = "block";
+
+            }
+            else {
+
+                item.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
