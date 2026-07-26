@@ -1133,3 +1133,80 @@ th{
     background:var(--primary-color);
     color:white;
 }
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode{
+    background:#121212;
+    color:#f5f5f5;
+}
+
+body.dark-mode .navbar{
+    background:#1b1b1b;
+}
+
+body.dark-mode .hero,
+body.dark-mode .stats-section,
+body.dark-mode .speakers-section,
+body.dark-mode .programme-section,
+body.dark-mode .themes-section,
+body.dark-mode .why-section,
+body.dark-mode .contact-section{
+    background:#181818;
+}
+
+body.dark-mode .stat-card,
+body.dark-mode .speaker-card,
+body.dark-mode .theme-card,
+body.dark-mode .why-card{
+    background:#242424;
+    color:white;
+}
+
+body.dark-mode table{
+    color:white;
+}
+
+body.dark-mode td{
+    border-color:#444;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select{
+    background:#2a2a2a;
+    color:white;
+    border:1px solid #555;
+}
+
+body.dark-mode .footer{
+    background:#0d0d0d;
+}
+.contact-section{
+    padding:100px 5%;
+}
+
+#contactForm{
+    max-width:700px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+}
+
+#contactForm input,
+#contactForm textarea{
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+}
+
+#contactForm button{
+    align-self:flex-start;
+}

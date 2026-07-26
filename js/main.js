@@ -239,3 +239,60 @@ filterButtons.forEach(button => {
     });
 
 });
+const form = document.getElementById("contactForm");
+
+if(form){
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const nom = document.getElementById("nom").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const sujet = document.getElementById("sujet").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if(
+            nom==="" ||
+            email==="" ||
+            sujet==="" ||
+            message===""){
+            alert("Veuillez remplir tous les champs.");
+            return;
+        }
+
+        alert("Message envoyé avec succès !");
+
+        form.reset();
+
+    });
+
+}
+const themeButton =
+document.querySelector(".theme-toggle");
+
+if(themeButton){
+
+    if(localStorage.getItem("theme")==="dark"){
+
+        document.body.classList.add("dark-mode");
+
+    }
+
+    themeButton.addEventListener("click",()=>{
+
+        document.body.classList.toggle("dark-mode");
+
+        if(document.body.classList.contains("dark-mode")){
+
+            localStorage.setItem("theme","dark");
+
+        }else{
+
+            localStorage.setItem("theme","light");
+
+        }
+
+    });
+
+}
