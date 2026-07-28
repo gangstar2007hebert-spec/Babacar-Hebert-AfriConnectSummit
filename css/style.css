@@ -1207,6 +1207,27 @@ body.dark-mode .footer{
     border:1px solid #ccc;
 }
 
+
 #contactForm button{
     align-self:flex-start;
+}
+/* =========================
+   GOOGLE MAP
+========================= */
+
+.map-section{
+    padding:80px 5%;
+}
+
+.map-container{
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.map-container iframe{
+    width:100%;
+    height:450px;
+    display:block;
+    border:none;
 }
