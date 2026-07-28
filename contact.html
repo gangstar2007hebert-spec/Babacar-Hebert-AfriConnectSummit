@@ -77,41 +77,93 @@
 
     </div>
 
-    <form id="contactForm">
+    <section class="contact-section">
 
-        <input
-            type="text"
-            id="nom"
-            placeholder="Nom complet"
-            required
-        >
+<div class="contact-container">
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Adresse email"
-            required
-        >
+    <!-- Formulaire -->
 
-        <input
-            type="text"
-            id="sujet"
-            placeholder="Sujet"
-            required
-        >
+    <div class="contact-form">
 
-        <textarea
-            id="message"
-            rows="6"
-            placeholder="Votre message"
-            required
-        ></textarea>
+        <h2>Inscription</h2>
 
-        <button class="btn btn-primary">
-            Envoyer
-        </button>
+        <form id="contactForm">
 
-    </form>
+            <input type="text"
+                   id="nom"
+                   placeholder="Nom complet"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Adresse email"
+                   required>
+
+            <input type="tel"
+                   id="telephone"
+                   placeholder="Téléphone"
+                   required>
+
+            <select id="participation">
+
+                <option>Présentiel</option>
+                <option>En ligne</option>
+
+            </select>
+
+            <select id="pays">
+
+                <option>Sénégal</option>
+                <option>Côte d'Ivoire</option>
+                <option>Mali</option>
+                <option>Burkina Faso</option>
+                <option>Guinée</option>
+                <option>Cameroun</option>
+                <option>Nigeria</option>
+                <option>Ghana</option>
+                <option>Bénin</option>
+                <option>Togo</option>
+
+            </select>
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Votre motivation"
+                required>
+            </textarea>
+
+            <button class="btn btn-primary">
+                Envoyer
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Informations -->
+
+    <div class="contact-info">
+
+        <h2>Informations</h2>
+
+        <p><strong>📍 Adresse :</strong><br>Dakar, Sénégal</p>
+
+        <p><strong>📞 Téléphone :</strong><br>+221 77 000 00 00</p>
+
+        <p><strong>📧 Email :</strong><br>contact@africonnect.sn</p>
+
+        <p>
+            Horaires :
+            <br>
+            Lundi au Vendredi
+            <br>
+            08h00 à 18h00
+        </p>
+
+    </div>
+
+</div>
 
 </section>
 <section class="map-section">
@@ -140,6 +192,63 @@
 </section>
 
 </main>
+<section class="faq-section">
+
+    <div class="section-title">
+        <h2>Foire Aux Questions</h2>
+        <p>Les questions les plus fréquentes.</p>
+    </div>
+
+    <div class="faq">
+
+        <div class="faq-item">
+            <input type="checkbox" id="q1">
+            <label for="q1">Comment s'inscrire ?</label>
+
+            <div class="faq-content">
+                <p>L'inscription se fait via le formulaire disponible sur cette page.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q2">
+            <label for="q2">L'événement est-il gratuit ?</label>
+
+            <div class="faq-content">
+                <p>Certaines activités sont gratuites, d'autres nécessitent une inscription payante.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q3">
+            <label for="q3">Qui peut participer ?</label>
+
+            <div class="faq-content">
+                <p>Étudiants, professionnels, entrepreneurs et passionnés du numérique.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q4">
+            <label for="q4">Comment recevoir mon badge ?</label>
+
+            <div class="faq-content">
+                <p>Le badge est envoyé par email après validation de l'inscription.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q5">
+            <label for="q5">Où se déroule la conférence ?</label>
+
+            <div class="faq-content">
+                <p>L'événement se déroule à Dakar, au Sénégal.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 <!-- FOOTER -->
